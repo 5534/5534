@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>The art of Michael</title>
+  <title>M Gallery</title>
   <style>
     body {
       margin: 0;
@@ -156,6 +156,22 @@
       max-width: 100%;
       box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.4), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
     }
+    #footerp {
+      text-align: center;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 14px;
+    }
+    #Mgallery {
+      max-width: 60%;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    #footerM {
+      float: left;
+
+    }
+
 
     @media screen and (max-aspect-ratio: 1/1) {
       H3 {
@@ -163,6 +179,11 @@
       }
       .tab button {
         font-size: 10px;
+      }
+      h9 {
+        margin-left: -20;
+        margin-right: -20;
+
       }
       #H3p {
         margin-left: 15%;
@@ -180,7 +201,7 @@
 <body>
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Home')"id="defaultOpen">Home</button>
-    <button class="tablinks" onclick="openCity(event, 'tab2')" >Wallpapers</button>
+    <button class="tablinks" onclick="openCity(event, 'tab2')" ><h9 id=tab2p>Wallpapers</h></button>
     <button class="tablinks" onclick="openCity(event, 'tab3')">3</button>
     <button class="tablinks" onclick="openCity(event, 'tab4')">4</button>
     <button class="tablinks2" onclick="openCity(event, 'Me')">Me</button>
@@ -189,6 +210,8 @@
   <div id="website-content">
 
     <div id="Home" class="tabcontent">
+      <img src="https://cdn.discordapp.com/attachments/289778341479972864/504701301116895232/M_gallery.png" style="width: 100%" id="Mgallery">
+      <hr>
       <h3>Welcome!</h3>
       <p id="H3p"><br /> <br />Welcome to my art portfolio website, enjoy!</p>
       <hr><br /><br />
@@ -203,7 +226,7 @@
 
     <div id="tab2" class="tabcontent">
       <h3>Wallpapers</h3>
-      <p id="H3p"><br />Here are the wallpapers I made for own use</p>
+      <p id="H3p"><br /> <br />Here are the wallpapers I made for own use</p>
       <hr><br /><br />
       <div class="portfolio" id="portfolio">
         <img src="https://cdn.discordapp.com/attachments/289778341479972864/501855877410717696/Michael_wallpaper_3.png" style="width: 100%">
@@ -256,7 +279,9 @@
   </div>
 
   <footer>
+    <img src="https://cdn.discordapp.com/attachments/289778341479972864/504704200278540288/M.png" style="width: 20%;" id="footerM">
     <p>Michael Kooltjes<br />A5</p>
+    <p id="footerp">&#xa9; Copyright 2018 Michael Kooltjes</p>
   </footer>
 </body>
 
