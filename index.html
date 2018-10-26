@@ -17,7 +17,7 @@
       font-family: 'Poppins', sans-serif;
     }
 
-    h3 {
+    H3 {
       text-align: center;
       font-size: 80px;
       margin: 0;
@@ -171,6 +171,13 @@
       margin-bottom: 30px;
     }
 
+    #pictureMe {
+      max-height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 60%;
+    }
+
     #footerM {
       float: left;
       max-width: auto;
@@ -229,13 +236,13 @@
 <body>
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">
-      <h9 id=tab2p>Home</h>
+      <h9 id=tab2p>Home</h9>
     </button>
     <button class="tablinks" onclick="openCity(event, 'tab2')">
-      <h9 id=tab2p>Wallpapers</h>
+      <h9 id=tab2p>Wallpapers</h9>
     </button>
     <button class="tablinks" onclick="openCity(event, 'tab3')">
-      <h9 id=tab2p>Profile pics</h>
+      <h9 id=tab2p>Profile pics</h9>
     </button>
     <button class="tablinks" onclick="openCity(event, 'tab4')">Other</button>
     <button class="tablinks2" onclick="openCity(event, 'Me')">Me</button>
@@ -350,11 +357,14 @@
     <div id="Me" class="tabcontent">
       <h3 id="MeH">Who am I?</h3>
       <hr><br /><br />
-      <div>
-        <img src="https://cdn.discordapp.com/attachments/289778341479972864/497871884235571211/Michael_wallpaper.jpg" style="width: 100%;">
+      <div class="portfolio" id=pictureMe>
+        <img src="https://cdn.discordapp.com/attachments/289778341479972864/505494927161950223/IMG-20180812-WA0003_20181026233422050.jpg" style="width: 100%">
       </div>
       <p id="meP">Hi, my name is Michael. I'm a high school student at ds. Pierson College in Den Bosch. As you can see I like to do graphic design in my spare time for own use or even for others. To make these images I use the free software
-        paint.net.</p>
+        paint.net.
+        <br /><br />
+        As you might have seen in my pictures, I really like playing the game Rocket League. I'm playing in a team and we compete against other teams in a <a href="https://www.unitedrogue.com/" style="text-decoration: none; font-style: italic; color: rgb(255, 50, 50);">league</a>.
+        Once I become good enough, I want to get into an e-Sports team. But that's still a long way out...</p>
     </div>
   </div>
 
