@@ -2,12 +2,13 @@
 <html>
 
 <head>
+  <link rel="shortcut icon" href="#" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>M Gallery</title>
+  <title>Michael Kooltjes</title>
   <style>
     body {
       margin: 0;
@@ -15,25 +16,42 @@
       background-position: center;
       font-family: 'Poppins', sans-serif;
     }
-    /* ignore this pls ^ */
+
     h3 {
       text-align: center;
       font-size: 80px;
       margin: 0;
       font-family: 'Bungee Shade';
       font-weight: lighter;
-
-
     }
-    #website-content {
-      text-align: center;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 10px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.4);
-      height: auto;
+
+    footer {
+      background-color: rgba(40, 40, 40, 1);
+      padding: 1px;
+      padding-right: 15px;
+      text-align: right;
+      color: white;
+      padding-top: 15px;
+      font-family: 'Quicksand', sans-serif;
+      letter-spacing: -0.6;
+      font-kerning: auto;
+      font-size: 18px;
     }
-    /* navigatie bar */
+
+    .portfolio:hover {
+      font-size: 20px;
+      transition: 0.25s;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      max-width: 100%;
+      box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.4), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .row {
+      max-width: 100%;
+      display: flex;
+    }
+
     .tab {
       position: fixed;
       width: 100%;
@@ -41,6 +59,7 @@
       background-color: rgba(40, 40, 40, 1);
       text-align: center;
     }
+
     .tab button {
       background-color: inherit;
       background-position: center;
@@ -57,24 +76,29 @@
       background-size: 120%;
       margin: 0 auto;
     }
+
     .tab button.tablinks:hover {
       border-bottom-color: rgba(255, 0, 0, 0.7);
       transition: border 0.25s;
     }
+
     .tab button.tablinks2:hover {
       background: url("http://www.bhmpics.com/walls/red_random_colors-other.jpg");
       background-size: 150%;
       background-position: center;
       transition: 0.25s;
     }
+
     .tab button.tablinks.active {
       background-color: red;
     }
+
     .tab button.tablinks2.active {
       background: url("http://www.bhmpics.com/walls/red_random_colors-other.jpg");
       background-size: 150%;
       background-position: center;
     }
+
     .tabcontent {
       color: grey;
       display: block;
@@ -82,45 +106,14 @@
       height: 100%;
       background: white;
     }
-    #intro {
-      background-color: grey;
-      color: white;
-    }
-    #Me {
-      background-color: white;
-      text-align: left;
-    }
+
     .portfolio {
       padding: 10px;
       background-color: rgba(0, 0, 0, 0.5);
       margin: 0 auto;
     }
-    footer {
-      background-color: rgba(40, 40, 40, 1);
-      padding: 1px;
-      padding-right: 15px;
-      text-align: right;
-      color: white;
-      padding-top: 15px;
-      font-family: 'Quicksand', sans-serif;
-      letter-spacing: -0.6;
-      font-kerning: auto;
-      font-size: 18px;
-    }
-    #michael {
-      border: 10px solid grey;
-      margin: 0 auto;
-    }
-    #meP {
-      font-size: 22px;
-      padding: 10px;
-      line-height: 40px;
-    }
-    #H3p {
-      margin-top: -30px;
-      margin-bottom: 40px;
-      font-size: 20px;
-    }
+
+
     .portfolio {
       color: rgba(255, 255, 255, 1);
       font-weight: lighter;
@@ -130,23 +123,39 @@
       margin-bottom: 40px;
       max-width: 60%;
     }
+
+    #intro {
+      background-color: grey;
+      color: white;
+    }
+
+    #Me {
+      background-color: white;
+      text-align: left;
+    }
+
+    #michael {
+      border: 10px solid grey;
+      margin: 0 auto;
+    }
+
+    #meP {
+      font-size: 22px;
+      padding: 10px;
+      line-height: 40px;
+    }
+
+    #H3p {
+      margin-top: -30px;
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+
     #portfolio {
       margin-left: 2.5%;
       margin-right: 2.5%;
       margin-top: 0;
       flex: 40%;
-    }
-    .portfolio:hover {
-      font-size: 20px;
-      transition: 0.25s;
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-      max-width: 100%;
-      box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.4), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
-    }
-    .row {
-      max-width: 100%;
-      display: flex;
     }
 
     #footerp {
@@ -155,53 +164,79 @@
       color: rgba(255, 255, 255, 0.9);
       font-size: 14px;
     }
+
     #Mgallery {
       max-width: 60%;
       margin-top: 0;
       margin-bottom: 30px;
     }
+
     #footerM {
       float: left;
       max-width: auto;
       max-height: 100px;
       margin-right: -100px;
     }
+
     #Hpics {
       line-height: 80px;
     }
+
     #portfolio2 {
       max-width: 40%;
     }
+
+    #otherimg {
+      background: white;
+      color: black;
+    }
+
     @media screen and (max-aspect-ratio: 1/1) {
       H3 {
         font-size: 40px;
-
       }
+
       .tab button {
         font-size: 10px;
       }
+
       h9 {
         margin-left: -900px;
         margin-right: -900px;
       }
+
       #H3p {
         margin-left: 15%;
         margin-right: 15%;
       }
+
       #Hpics {
         line-height: 50px;
       }
-      }
+    }
 
+    #website-content {
+      text-align: center;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 10px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.4);
+      height: auto;
     }
   </style>
 </head>
 
 <body>
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Home')"id="defaultOpen"><h9 id=tab2p>Home</h></button>
-    <button class="tablinks" onclick="openCity(event, 'tab2')" ><h9 id=tab2p>Wallpapers</h></button>
-    <button class="tablinks" onclick="openCity(event, 'tab3')"><h9 id=tab2p>Profile pics</h></button>
+    <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">
+      <h9 id=tab2p>Home</h>
+    </button>
+    <button class="tablinks" onclick="openCity(event, 'tab2')">
+      <h9 id=tab2p>Wallpapers</h>
+    </button>
+    <button class="tablinks" onclick="openCity(event, 'tab3')">
+      <h9 id=tab2p>Profile pics</h>
+    </button>
     <button class="tablinks" onclick="openCity(event, 'tab4')">Other</button>
     <button class="tablinks2" onclick="openCity(event, 'Me')">Me</button>
   </div>
@@ -214,7 +249,8 @@
       <h3>Welcome!</h3>
       <p id="H3p"><br />Welcome to my art portfolio website, enjoy!<br /><small>(Images are pop-ups, hover over it or tap on it)</small></p>
       <hr><br /><br />
-      <div class="portfolio" >
+
+      <div class="portfolio">
         <img src="https://cdn.discordapp.com/attachments/289778341479972864/497886361018171421/unknown.png" style="width: 100%" id="img1">
         <br /><br /><b>This is how I make my pictures.</b> <br /><br />This is the first wallpaper I ever made combined with a edited RL logo. <br />Every letter in the wallpaper is entirely made by me using squares and triangles which cost me a
         lot of time. For that reason I always reuse these letters when spelling my name for future projects. I also use them as a signature when it's not used (examples follow). For the background I did the following: first I rendered clouds with
@@ -227,39 +263,44 @@
       <h3>Wallpapers</h3>
       <p id="H3p"><br /> <br />Here are the wallpapers I made for own use</p>
       <hr><br /><br />
-      <div class="portfolio" >
+      <div class="portfolio">
         <img src="https://cdn.discordapp.com/attachments/289778341479972864/501855877410717696/Michael_wallpaper_3.png" style="width: 100%">
-        <br /><br />What my idea was on this one is to have a nice galaxy full of stars and colors but when searching for it I found this background which was much nicer then my original idea I think. What I did next was just simply pasting my name
+        <br /><br />What my idea was for this one is to have a nice galaxy full of stars and colors but when searching for it I found this background which was much nicer than my original idea, I think. What I did next was just simply pasting my
+        name
         in it (as usual) and recolored it (original below). I changed it to this color because this way it matches more with the background.
       </div>
-      <div class="portfolio" >
+
+      <div class="portfolio">
         <img src="https://cdn.discordapp.com/attachments/289778341479972864/501855842749120513/ItsMichaelK_wallpaper_RL_logo.png" style="width: 100%">
         <br /><br />This is the background I use for anything related to gaming. This is my steam username. The spin in the background is similar to the background below.
       </div>
-      <div class="portfolio" >
-      <img src="https://cdn.discordapp.com/attachments/289778341479972864/501855870662213642/M_wallpaper_1.png" style="width: 100%">
-      <br /><br />I had a colorful image which I blurred intensifely. I then twisted it and bulged the middle. I made a 'M' and added a shadow.
-    </div>
-      <div class="portfolio" >
-        <img src="https://cdn.discordapp.com/attachments/289778341479972864/501855879117799434/Michael_wallpaper.jpg" style="width: 100%">
-        <br /><br />This is the image seen in Home, without the RL logo. As said there, this is my first ever made wallpaper. Fully made by myself. Everything.
+
+      <div class="portfolio">
+        <img src="https://cdn.discordapp.com/attachments/289778341479972864/501855870662213642/M_wallpaper_1.png" style="width: 100%">
+        <br /><br />I had a colorful image which I blurred intensifely. I then twisted it and bulged the middle. I made a 'M' and added a shadow.
       </div>
-      <div class="portfolio" >
+
+      <div class="portfolio">
+        <img src="https://cdn.discordapp.com/attachments/289778341479972864/501855879117799434/Michael_wallpaper.jpg" style="width: 100%">
+        <br /><br />This is the image featured on the homepage, without the RL logo. As said there, this is my first ever made wallpaper. Fully made by myself. Everything.
+      </div>
+
+      <div class="portfolio">
         <img src="https://cdn.discordapp.com/attachments/289778341479972864/501855895739957270/Rocket_league_road_to_champion_wallpaper.png" style="width: 100%">
         <br /><br />I made this when I set my goal. My goal was to reach Champion(purple icon on the right), a competitive rank in the game Rocket League, before the year 2019 (I already reached my goal in September 2018). For the background I used
         the same technique as the image above. I made the RL logo on the left side by cutting the insides of the logo in a colorful background. The logo on the right (purple) is a Champion logo I simplified.
       </div>
-      <div class="portfolio" >
+
+      <div class="portfolio">
         <img src="https://cdn.discordapp.com/attachments/289778341479972864/501855900030599168/rocket_league_wallpaper.png" style="width: 100%">
         <br /><br />A Rocket League wallpaper. I made it because I needed a background for my PS4.
       </div>
-
-
     </div>
 
     <div id="tab3" class="tabcontent">
       <h3 id="Hpics">Profile pictures</h3>
-      <br /><br /><p id="H3p">Here are profile pictures I made for own use</p>
+      <br /><br />
+      <p id="H3p">Here are profile pictures I made for own use</p>
       <hr><br /><br />
       <div class="portfolio" id="portfolio2">
         <img src="https://cdn.discordapp.com/attachments/289778341479972864/505434980718084096/itsmichaelk_logo_1.png" style="width: 100%">
@@ -267,47 +308,49 @@
       </div>
       <div class="row">
         <div>
-      <div class="portfolio">
-        <img src="https://cdn.discordapp.com/attachments/289778341479972864/505434422770925583/M_logo_2_updated.png" style="width: 100%">
-        <br /><br />This is the profile mic for my general Google account, which I use for day-to-day tasks.
-      </div>
+          <div class="portfolio">
+            <img src="https://cdn.discordapp.com/attachments/289778341479972864/505488114089721867/M_logo_6_2.0.png" style="width: 100%">
+            <br /><br />This is the profile mic for my general Google account, which I use for day-to-day tasks.
           </div>
+        </div>
         <div>
-        <div class="portfolio">
-        <img src="https://cdn.discordapp.com/attachments/289778341479972864/505063507360743455/RL_logo.png" style="width: 100%">
-        <br /><br />This is my profile pic on Discord, which I primarly use for communication with my RL team and the league organization.
-      </div>
+          <div class="portfolio">
+            <img src="https://cdn.discordapp.com/attachments/289778341479972864/505063507360743455/RL_logo.png" style="width: 100%">
+            <br /><br />This is my profile pic on Discord, which I primarly use for communication with my RL team and the league organization.
           </div>
+        </div>
       </div>
       <div class="row">
         <div>
-      <div class="portfolio">
-        <img src="https://cdn.discordapp.com/attachments/289778341479972864/505434618682408961/M_logo_4.png" style="width: 100%">
-        <br /><br />This is the profile pic of Google account for school.
-      </div>
+          <div class="portfolio">
+            <img src="https://cdn.discordapp.com/attachments/289778341479972864/505434618682408961/M_logo_4.png" style="width: 100%">
+            <br /><br />This is the profile pic of Google account for school.
           </div>
+        </div>
         <div>
-        <div class="portfolio">
-        <img src="https://cdn.discordapp.com/attachments/289778341479972864/505434695547224065/M_logo_5.png" style="width: 100%">
-        <br /><br />This is the profile pic of my Google that I exclusively use for formal things.
-      </div>
+          <div class="portfolio">
+            <img src="https://cdn.discordapp.com/attachments/289778341479972864/505434422770925583/M_logo_2_updated.png" style="width: 100%">
+            <br /><br />This is the profile pic of my Google that I exclusively use for formal things.
           </div>
+        </div>
       </div>
-
-      <p></p>
     </div>
 
     <div id="tab4" class="tabcontent">
       <h3>Other work</h3>
-      <br /><br /><p id="H3p"></p>
+      <br /><br />
+      <p id="H3p"></p>
       <hr><br /><br />
-
+      <div class="portfolio" id="otherimg">
+        <img src="https://cdn.discordapp.com/attachments/289778341479972864/505445272688656384/LOGO_OG.png" style="width: 100%">
+        <br /><br />This is a logo I made for my brother. He plays in a FIFA team om ps4, and needed a logo. He wanted it black with gold, round, something cool in the middle and their name on top.
+      </div>
     </div>
 
     <div id="Me" class="tabcontent">
       <h3 id="MeH">Who am I?</h3>
       <hr><br /><br />
-      <div >
+      <div>
         <img src="https://cdn.discordapp.com/attachments/289778341479972864/497871884235571211/Michael_wallpaper.jpg" style="width: 100%;">
       </div>
       <p id="meP">Hi, my name is Michael. I'm a high school student at ds. Pierson College in Den Bosch. As you can see I like to do graphic design in my spare time for own use or even for others. To make these images I use the free software
@@ -316,15 +359,16 @@
   </div>
 
   <div>
-  <footer>
-    <img src="https://cdn.discordapp.com/attachments/289778341479972864/504704200278540288/M.png" id="footerM">
-    <p><b>Michael Kooltjes</b><br />A5</p>
-    <p id="footerp">&#xa9; Copyright 2018 Michael Kooltjes</p>
-  </footer>
-</div>
+    <footer>
+      <img src="https://cdn.discordapp.com/attachments/289778341479972864/504704200278540288/M.png" id="footerM">
+      <p><b>Michael Kooltjes</b><br />A5</p>
+      <p id="footerp">&#xa9; 2018 Michael Kooltjes</p>
+    </footer>
+  </div>
 </body>
 
 </html>
+
 <script>
   function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
