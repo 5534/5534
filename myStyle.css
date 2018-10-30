@@ -187,6 +187,10 @@
       color: black;
     }
 
+    #ProfilePics {
+    width: 1000px;    
+    }
+
     @media screen and (max-aspect-ratio: 1/1) {
       H3 {
         font-size: 40px;
