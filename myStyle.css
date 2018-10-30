@@ -188,7 +188,8 @@
     }
 
     #ProfilePics {
-    width: 100%    
+    width: 100%;
+    margin: 0 auto;
     }
 
     @media screen and (max-aspect-ratio: 1/1) {
