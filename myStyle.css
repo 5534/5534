@@ -188,7 +188,7 @@
     }
 
     #ProfilePics {
-    width: 1000px;    
+    width: 100%    
     }
 
     @media screen and (max-aspect-ratio: 1/1) {
