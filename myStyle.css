@@ -116,6 +116,7 @@
 .program {
     max-width: 850px;
     text-align: center;
+    margin-left: -100px;
 }
 
     #intro {
