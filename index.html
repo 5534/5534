@@ -100,19 +100,16 @@ float hue = 0;
 float brightness = 255;
 float hueChange = 15;
 float brightnessChange = -7;
-
 float height = sqrt(3)*scale;
 float width = 2*scale;
 float beginX = 0;
 float beginY = 0;
 float amountX = 0;
 float amountY = 0;
-
 PImage img_ball;
 PImage img_goal;
 PImage img_M;
 PImage img_Field;
-
 void setup() { 
   imageMode(CENTER);
   background(0);
@@ -205,7 +202,6 @@ class RedGoal {
     text("GOOOAAAAALLL!!!", 500, 250);
   }
 }
-
 class Box {
   void show() {
     fill(255, 0, 0);
@@ -245,7 +241,6 @@ class Score2 {
     text("Highscore:"+int(highscore), 60, 480);
   }
 }
-
 class BarL {
   void show() {
     fill(255);
@@ -278,7 +273,6 @@ class Score3 {
     text(int(score2), 650, 350);
   }
 }
-
 class DVD {
   void show() {
     rectMode(CENTER);
@@ -292,7 +286,6 @@ class DVD {
     y = y + moveY;
   }
 }
-
 Score1 s1 = new Score1();
 player1 p1 = new player1();
 player2 p2 = new player2();
@@ -301,19 +294,15 @@ Goal g = new Goal();
 Walls w = new Walls();
 BlueGoal bG = new BlueGoal();
 RedGoal rG = new RedGoal();
-
 Box box = new Box();
 Obstacle o = new Obstacle ();
 Ground grnd = new Ground();
 Score2 s2 = new Score2();
-
 BarL bL = new BarL();
 BarR bR = new BarR();
 Ball2 b2 = new Ball2();
 Score3 s3 = new Score3();
-
 DVD dvd = new DVD();
-
 void draw() {  
   if (intro == true) {
     sizeX = 1000;
@@ -326,7 +315,6 @@ void draw() {
     textSize(100);
     fill(255, 255, 255);
     text("M cube", 500, 250);
-
     rectMode(CENTER);
     fill(255, 255, 255);
     if (mouseX >= game1X-75 && mouseX <= game1X+75 && mouseY >= gameY-25 && mouseY <= gameY+25) {
@@ -337,7 +325,6 @@ void draw() {
     fill(0);
     text("Football", game1X, gameY);
     rectMode(CORNER);
-
     rectMode(CENTER);
     fill(255, 255, 255);
     if (mouseX >= game2X-75 && mouseX <= game2X+75 && mouseY >= gameY-25 && mouseY <= gameY+25) {
@@ -348,7 +335,6 @@ void draw() {
     fill(0);
     text("Flappy Box", game2X, gameY);
     rectMode(CORNER);
-
     rectMode(CENTER);
     fill(255, 255, 255);
     if (mouseX >= game3X-75 && mouseX <= game3X+75 && mouseY >= gameY-25 && mouseY <= gameY+25) {
@@ -359,7 +345,6 @@ void draw() {
     fill(0);
     text("Pong", game3X, gameY);
     rectMode(CORNER);
-
     rectMode(CENTER);
     fill(255, 255, 255);
     if (mouseX >= game4X-75 && mouseX <= game4X+75 && mouseY >= gameY-25 && mouseY <= gameY+25) {
@@ -370,7 +355,6 @@ void draw() {
     fill(0);
     text("DVD", game4X, gameY);
     rectMode(CORNER);
-
     rectMode(CENTER);
     colorMode(HSB);
     fill(random(255), 255, 255);
@@ -395,9 +379,7 @@ void draw() {
     b.show();
     w.show();
     g.show();
-
     if (!(direction_ballx == 0) || !(direction_bally == 0)) {
-
       rotate_ball = rotate_ball + PI/20;
     }
     // ball bounce player 1
@@ -555,7 +537,6 @@ void draw() {
     if (player2_y >= 480) {
       player2_y = 480;
     }
-
     // border ball
     if ( dist(75, 150, ball_x, ball_y) < 40 ) {
       direction_ballx = 1;
@@ -712,7 +693,6 @@ void draw() {
     bL.show();
     bR.show();
     b2.show();
-
     if (Py1 <= 0) {
       Py1 = 0;
     }
@@ -725,11 +705,9 @@ void draw() {
     if (Py2 >= 500) {
       Py2 = 500;
     }
-
     if (keyPressed) {
       start = 1;
     }
-
     if (ballY >= 587.5 && PmoveY > 0) {
       PmoveY = -PmoveY;
     }
@@ -799,7 +777,6 @@ void draw() {
       noFill();
       pushMatrix();
       translate(beginX, beginY);
-
       beginShape();
       vertex(width/4, 0);
       vertex(width*0.75, 0);
@@ -809,7 +786,6 @@ void draw() {
       vertex(0, height/2);
       vertex(width/4, 0);
       endShape();
-
       beginShape(LINES);
       vertex(width/4, 0);
       vertex(width/2, height/2);
@@ -821,7 +797,6 @@ void draw() {
       vertex(width*0.8, height/2);
       vertex(width*0.65, 0);
       vertex(width*0.9, height/2);
-
       vertex(width*0.5, height*0.5);
       vertex(width, height*0.5);
       vertex(width*0.45, height*0.6);
@@ -832,7 +807,6 @@ void draw() {
       vertex(width*0.85, height*0.8);
       vertex(width*0.3, height*0.9);
       vertex(width*0.8, height*0.9);
-
       vertex(width*0.3, height*0.1);
       vertex(width*0.05, height*0.6);
       vertex(width*0.35, height*0.2);
@@ -887,7 +861,6 @@ void draw() {
     text("X", 980, 0);
   }
 }
-
 void mousePressed() {
   if (intro == true) {
     if (mouseX >= game1X-75 && mouseX <= game1X+75 && mouseY >= gameY-25 && mouseY <= gameY+25) {
